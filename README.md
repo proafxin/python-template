@@ -2,6 +2,7 @@
 
 [![Build, test with Tox and deploy](https://github.com/proafxin/python-template/actions/workflows/test_release.yaml/badge.svg)](https://github.com/proafxin/python-template/actions/workflows/test_release.yaml)
 [![codecov](https://codecov.io/gh/proafxin/python-template/graph/badge.svg?token=w6t9xzSY45)](https://codecov.io/gh/proafxin/python-template)
+[![Documentation Status](https://readthedocs.org/projects/python-template-for-packaging/badge/?version=latest)](https://python-template-for-packaging.readthedocs.io/en/latest/?badge=latest)
 
 A template for building python packages with CI/CD for code quality check and publishing to PyPi.
 

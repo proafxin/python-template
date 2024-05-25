@@ -33,9 +33,6 @@ jobs:
           curl -sSL https://install.python-poetry.org | python3 -
           tox
       - if: ${{ github.event_name == 'push' && matrix.python-version == 3.12 }}
-        name: Export Coverage XML
-        run: tox -e coverage
-      - if: ${{ github.event_name == 'push' && matrix.python-version == 3.12 }}
         name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         with:
