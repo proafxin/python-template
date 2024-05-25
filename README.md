@@ -1,5 +1,8 @@
 # Python Template
 
+[![Build, test with Tox and deploy](https://github.com/proafxin/python-template/actions/workflows/test_release.yaml/badge.svg)](https://github.com/proafxin/python-template/actions/workflows/test_release.yaml)
+[![codecov](https://codecov.io/gh/proafxin/python-template/graph/badge.svg?token=w6t9xzSY45)](https://codecov.io/gh/proafxin/python-template)
+
 A template for building python packages with CI/CD for code quality check and publishing to PyPi.
 
 ## Development
