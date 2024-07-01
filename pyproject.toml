@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytemplate"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python template for creating packages."
 authors = ["Masum Billal <billalmasum93@gmail.com>"]
 license = "LICENSE"
@@ -17,6 +17,20 @@ coverage = "^7.5.1"
 [tool.poetry.group.docs.dependencies]
 sphinx = "^7.3.7"
 furo = "^2024.5.6"
+
+
+[tool.poetry.group.formatting.dependencies]
+mypy = "^1.10.1"
+ruff = "^0.5.0"
+bandit = "^1.7.9"
+
+[tool.mypy]
+exclude = [".venv", ".env", "venv", "env", "build", "docs", "dist"]
+
+
+[tool.bandit]
+exclude_dirs = [".venv", "venv", "env", ".tox", "docs", "tests"]
+
 
 [build-system]
 requires = ["poetry-core"]
