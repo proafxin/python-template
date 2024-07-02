@@ -37,7 +37,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: proafxin/python-template
           verbose: true
-      - if: ${{ github.event_name == 'push' && matrix.python-version == 3.12 }}
+      - if: ${{ github.event_name == 'push' && matrix.python-version == 3.8 }}
         name: Publish to Pypi
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
