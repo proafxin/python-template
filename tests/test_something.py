@@ -1,7 +1,10 @@
+import pytest
+
 from pytemplate.something import hello
 
 
-def test_hello() -> None:
+@pytest.mark.asyncio
+async def test_hello() -> None:
     res = hello()
 
     assert isinstance(res, str)
