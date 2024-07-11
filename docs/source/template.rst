@@ -1,13 +1,13 @@
-pytemplate package
-==================
+template package
+================
 
 Submodules
 ----------
 
-pytemplate.something module
----------------------------
+template.hello module
+---------------------
 
-.. automodule:: pytemplate.something
+.. automodule:: template.hello
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ pytemplate.something module
 Module contents
 ---------------
 
-.. automodule:: pytemplate
+.. automodule:: template
    :members:
    :undoc-members:
    :show-inheritance:

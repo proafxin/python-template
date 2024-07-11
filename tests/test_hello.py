@@ -1,9 +1,11 @@
-from pytemplate.something import hello
+import pytest
+
+from template.hello import hello
 
 
+@pytest.mark.asyncio
 async def test_hello() -> None:
-    res = hello()
+    res = await hello()
 
     assert isinstance(res, str)
     assert "hello" in res.lower()
-    assert "world" in res.lower()

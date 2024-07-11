@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "pytemplate"
-version = "0.1.4"
-description = "A Python template for creating packages."
+name = "template"
+version = "1.0.0"
+description = "A python template with code formatting, typing, test coverage and automated tasks."
 authors = ["Masum Billal <billalmasum93@gmail.com>"]
 license = "LICENSE"
 readme = "README.md"
@@ -9,9 +9,11 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 
+
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.2.1"
-coverage = "^7.5.1"
+pytest = "^8.2.2"
+coverage = "^7.5.4"
+pytest-asyncio = "^0.23.7"
 
 
 [tool.poetry.group.docs.dependencies]
@@ -19,16 +21,24 @@ sphinx = "^7.3.7"
 furo = "^2024.5.6"
 
 
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.10.1"
+
+
 [tool.poetry.group.formatting.dependencies]
 pre-commit = "^3.7.1"
 
+
 [tool.mypy]
-exclude = [".venv", ".env", "venv", "env", "build", "docs", "dist"]
+exclude = [".venv", ".env", "venv", "build", "docs", "dist"]
 
 
 [tool.bandit]
 exclude_dirs = [".venv", "venv", "env", ".tox", "docs", "tests"]
 
+
+[tool.ruff]
+line-length = 100
 
 [build-system]
 requires = ["poetry-core"]
