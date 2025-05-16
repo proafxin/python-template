@@ -1,6 +1,6 @@
 import pytest
 
-from template.hello import hello
+from pkg_template.hello import hello
 
 
 @pytest.mark.asyncio

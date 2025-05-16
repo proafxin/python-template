@@ -4,4 +4,5 @@ python-template
 .. toctree::
    :maxdepth: 4
 
-   template
+   pkg_template
+   pytemplates
